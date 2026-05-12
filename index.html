@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>PDDIKTI - Latihan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        /* HEADER */
+        .header {
+            background-color: #5a2ea6;
+            color: white;
+            padding: 15px 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 6px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        /* FORM */
+        .form-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        input {
+            padding: 10px;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #5a2ea6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #4a2390;
+        }
+
+        /* HASIL */
+        .hasil {
+            margin-top: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #f0f0f0;
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+
+        /* FOOTER */
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #5a2ea6;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        Pangkalan Data Pendidikan Tinggi
+    </div>
+
+    <!-- CONTENT -->
+    <div class="container">
+        <h2>Pencarian Mahasiswa</h2>
+
+        <div class="form-group">
+            <input type="text" placeholder="Nama Mahasiswa">
+            <input type="text" placeholder="NIM">
+            <button>Cari</button>
+        </div>
+
+        <!-- HASIL PENCARIAN -->
+<div class="hasil">
+    <!-- KOTAK BESAR -->
+    <div class="kotak-hasil">
+        Hasil Pencarian
+    </div>
+
+    <!-- TABEL -->
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>NIM</th>
+                <th>Perguruan Tinggi</th>
+                <th>Program Studi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- DATA DUMMY -->
+            <tr>
+                <td>Fajar Iraawan Pramujati</td>
+                <td>0912168081</td>
+                <td>Universitas Sanata Dharma Yogyakarta</td>
+                <td>Farmasi</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+        <!-- KEMBALI -->
+        <div class="footer">
+            <a href="https://pddikti.kemdiktisaintek.go.id//">← Kembali ke Beranda </a>
+        </div>
+    </div>
+
+</body>
+</html>
